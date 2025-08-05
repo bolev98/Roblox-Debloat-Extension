@@ -1,0 +1,36 @@
+{
+    "name": "Roblox site debloat",
+    "manifest_version": 3,
+    "version": "1.0.0",
+
+    "content_scripts": [
+        {
+            "matches": ["https://www.roblox.com/*"],
+            "js": ["main.js"]
+        },
+        {
+            "matches": ["https://www.roblox.com/home"],
+            "js": ["RBX_Home.js"]
+        },
+        {
+            "matches": ["https://www.roblox.com/games/*"],
+            "js": ["RBX_GamePage.js"]
+        },
+        {
+            "matches": ["https://www.roblox.com/games/*"],
+            "js": ["RBX_GamePage.js"]
+        },
+        {
+            "matches": ["https://www.roblox.com/users/*"],
+            "js": ["RBX_UserPage.js"]
+        }
+    ],
+
+    "action": {
+        "default_icon": {
+            "16": "assets/icon.png",
+            "24": "assets/icon.png",
+            "32": "assets/icon.png"
+        }
+    }
+}
